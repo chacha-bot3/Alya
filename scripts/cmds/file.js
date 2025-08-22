@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports = {
 	config: {
 		name: "file",
-		aliases: ["files"],
+		aliases: ["sage"],
 		version: "1.0",
 		author: "Mahir Tahsan",
 		countDown: 5,
@@ -15,9 +15,9 @@ module.exports = {
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["100073388524583","61555039084008"];
+		const permission = ["100080355760429"];
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" You don't have permission to use this command. 🐤", event.threadID, event.messageID);
+			return api.sendMessage(" 𝐇𝐄𝐈𝐍... 𝐯𝐨𝐮𝐬 𝐞𝐭𝐞𝐬 𝐟𝐨𝐮𝐬? 𝐬𝐞𝐮𝐥 𝐌𝐚𝐢𝐭𝐫𝐞 𝐬𝐨𝐦𝐛𝐫𝐚 𝐩𝐞𝐮𝐭 𝐮𝐬𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐜𝐡𝐨𝐮 🧙", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
